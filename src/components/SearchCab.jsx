@@ -36,7 +36,15 @@ const SearchCab = () => {
         >
           Book online cab
         </HeaderText>
-        <FlexContainer justifyContent="start" alignItems="flex-start">
+        <FlexContainer
+          responsiveWidth="280px !important"
+          justifyContent="start"
+          alignItems="flex-start"
+          flexDirection="row"
+          responsiveFlexDirection="column"
+          responsiveJustifyContent="center"
+          responsiveAlignItems="center"
+        >
           <Button
             href="#"
             Color="#fff"
@@ -73,6 +81,7 @@ const SearchCab = () => {
           alignItems="center"
           flexDirection="row"
           responsiveFlexDirection="column"
+          responsiveWidth="280px !important"
           borderRadius="8px"
           bgColor="#fff"
           marginTop="2em"
@@ -94,7 +103,7 @@ const SearchCab = () => {
             <Input
               type="text"
               Padding="10px 30px"
-              Border="none"
+              Border="none !important"
               placeholder="Enter airport, hotel, address"
               value={location}
               onChange={(e) => setLocation(e.target.value)}
@@ -116,7 +125,7 @@ const SearchCab = () => {
             <Input
               type="text"
               Padding="10px 30px"
-              Border="none"
+              Border="none !important"
               placeholder="Enter airport, hotel, address"
               value={destination}
               onChange={(e) => setDestination(e.target.value)}
@@ -139,7 +148,7 @@ const SearchCab = () => {
               <Input
                 type="text"
                 Padding="10px 20px"
-                Border="none"
+                Border="none !important"
                 placeholder="For date"
                 Width="120px"
                 value={pickUpDate}
@@ -148,7 +157,7 @@ const SearchCab = () => {
               <Input
                 type="text"
                 Padding="10px 20px"
-                Border="none"
+                Border="none !important"
                 placeholder="For time"
                 Width="120px"
                 value={pickUpTime}
@@ -160,6 +169,7 @@ const SearchCab = () => {
             flexDirection="row"
             justifyContent="center"
             alignItems="center"
+            responsiveWidth="100% !important"
             bgColor="#d0d0d0"
             Padding="2em 4em"
           >
@@ -180,7 +190,7 @@ const SearchCab = () => {
             <Select
               onChange={handleChange}
               Padding=".1em .4em"
-              Border="none"
+              Border="none !important"
               Width="100%"
             >
               {PassengerData.map((option) => (
@@ -193,6 +203,7 @@ const SearchCab = () => {
             justifyContent="center"
             alignItems="center"
             bgColor="#ff5a1f"
+            responsiveWidth="100% !important"
             Padding="2em 1.7em"
           >
             <SearchIcon Color="#fff" fontSize="18px" />{" "}

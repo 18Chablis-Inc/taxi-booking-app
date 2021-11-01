@@ -21,37 +21,46 @@ const Login = () => {
     }, 5000);
   };
   return (
-    <div>
+    <>
       <HeaderText
         textTransform="capitalize"
         fontSize="26px"
         marginTop="2em"
         marginBottom="1em"
+        Color="#000"
       >
         Login
       </HeaderText>
       <Card
-        Width="400px"
-        borderRadius="10px"
-        Margin="0 auto"
+        Width="400px  !important"
+        responsiveWidth="280px  !important"
+        borderRadius="10px !important"
+        Margin="0 auto !important"
         boxShadow="0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"
       >
         <form onSubmit={handleLogin}>
           <FlexContainer
-            justifyContent="center"
-            alignItems="center"
-            marginBottom="1em"
+            justifyContent="center !important"
+            alignItems="center !important"
+            marginBottom="1em !important"
           >
-            <Label fontSize="18px" Margin="0 1em 0 0">
+            <Label
+              responsiveFontSize="14px !important"
+              fontSize="16px !important"
+              Margin="0 1em 0 0 !important"
+            >
               Email :
             </Label>
             <Input
-              borderRadius="20px"
-              Padding="10px 20px"
-              Margin=".1em .4em .3em 1.3em"
+              borderRadius="20px !important"
+              Padding="10px 20px !important"
+              Width="70% !important"
+              responsiveWidth="60% !important"
+              Margin=".1em .4em .3em 1.3em !important"
+              fontSize="1em"
               type="email"
-              Border="1px solid #26272B"
-              focusBorder="1px solid #484a4f"
+              Border="1px solid #26272B !important"
+              focusBorder="1px solid #484a4f !important"
               autoComplete="off"
               placeholder="something@anything.com"
               value={email}
@@ -65,16 +74,23 @@ const Login = () => {
             alignItems="center"
             marginBottom="1em"
           >
-            <Label fontSize="18px" Margin="0 .3em 0 0">
+            <Label
+              responsiveFontSize="14px !important"
+              fontSize="16px !important"
+              Margin="0 1em 0 0 !important"
+            >
               Password :
             </Label>
             <Input
-              borderRadius="20px"
-              Padding="10px 20px"
+              borderRadius="20px !important"
+              Width="60% !important"
+              Padding="10px 20px !important"
+              responsiveWidth="60% !important"
+              fontSize="1em"
               autoComplete="off"
-              Border="1px solid #26272B"
-              focusBorder="1px solid #484a4f"
-              Margin=".1em .4em .3em .6em"
+              Border="1px solid #26272B !important"
+              focusBorder="1px solid #484a4f !important"
+              Margin=".1em .6em .3em 1em !important"
               type="password"
               placeholder="**************"
               value={password}
@@ -115,7 +131,7 @@ const Login = () => {
           </FlexContainer>
         </form>
       </Card>
-    </div>
+    </>
   );
 };
 

@@ -40,6 +40,9 @@ export const FlexContainer = styled.div`
   border: ${(props) => props.Border};
   border-radius: ${(props) => props.borderRadius};
   @media (max-width: 768px) {
+    width: ${(props) => props.responsiveWidth};
+    align-items: ${(props) => props.responsiveAlignItems};
+    justify-content: ${(props) => props.responsiveJustifyContent};
     flex-direction: ${(props) => props.responsiveFlexDirection};
   }
 `;
@@ -69,6 +72,7 @@ export const Card = styled.div`
   @media (max-width: 768px) {
     flex-direction: ${(props) => props.responsiveFlexDirection};
     margin: ${(props) => props.responsiveMargin};
+    width: ${(props) => props.responsiveWidth};
     cursor: pointer;
   }
   @media (max-width: 425px) {
@@ -136,6 +140,7 @@ export const Button = styled.a`
   }
   @media (max-width: 768px) {
     margin: 0.6em 0;
+    // margin: ${(props) => props.responsiveMargin};
   }
 `;
 
@@ -200,10 +205,16 @@ export const Input = styled.input`
     outline: none;
     border: ${(props) => props.focusBorder};
   }
+  @media (max-width: 768px) {
+    width: ${(props) => props.responsiveWidth};
+  }
 `;
 export const Label = styled.label`
   font-size: ${(props) => props.fontSize};
   margin: ${(props) => props.Margin};
+  @media (max-width: 768px) {
+    font-size: ${(props) => props.responsiveFontSize};
+  }
 `;
 export const StyledLink = styled(Link)`
   font-size: ${(props) => props.fontSize};

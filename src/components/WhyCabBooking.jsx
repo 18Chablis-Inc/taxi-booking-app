@@ -19,7 +19,7 @@ const WhyCabBooking = () => {
         textTransform="capitalize"
         fontSize="26px"
         marginTop="0.6em"
-        marginBottom="1em"
+        marginBottom=".6em"
       >
         Why EaseMyTrip for cab booking?
       </HeaderText>
@@ -29,7 +29,7 @@ const WhyCabBooking = () => {
           responsiveMargin="0.5em 0"
           Width="300px"
           flexDirection="column"
-          Height="220px"
+          Height="320px !important"
         >
           <Circle Border="1px solid #79b1e5">
             <CarIcon />
@@ -46,7 +46,7 @@ const WhyCabBooking = () => {
           responsiveMargin="0.5em 0"
           Width="300px"
           flexDirection="column"
-          Height="220px"
+          Height="320px !important"
         >
           <Circle Border="1px solid #79b1e5">
             <HandCoinIcon />
@@ -63,15 +63,15 @@ const WhyCabBooking = () => {
           responsiveMargin="0.5em 0"
           Width="300px"
           flexDirection="column"
-          Height="220px"
+          Height="320px !important"
         >
           <Circle Border="1px solid #79b1e5">
             <TripIcon />
           </Circle>
-          <HeaderText marginTop=".4em" textTransform="capitalize">
-            easy and flexible booking
+          <HeaderText textTransform="capitalize">
+            easy &amp; flexible booking
           </HeaderText>
-          <Text Margin=".4em 0" textAlign="center">
+          <Text textAlign="center">
             Booking online is easy and only take 5 minutes, cancellations are
             free of charge up to 24 hours before the transfer
           </Text>
@@ -81,7 +81,7 @@ const WhyCabBooking = () => {
           responsiveMargin="0.5em 0"
           Width="300px"
           flexDirection="column"
-          Height="220px"
+          Height="320px !important"
         >
           <Circle Border="1px solid #79b1e5">
             <CalendarIcon Color="#79b1e5" fontSize="30px" />
