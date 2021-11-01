@@ -1,9 +1,11 @@
 import styled from "styled-components";
+import { IoIosSearch } from "react-icons/io";
 import { MdArrowForwardIos } from "react-icons/md";
 import { BiMapPin, BiTrip } from "react-icons/bi";
-import { BsCalendarDate } from "react-icons/bs";
+import { BsCalendarDate, BsPerson } from "react-icons/bs";
 import { AiFillCar } from "react-icons/ai";
 import { RiHandCoinLine } from "react-icons/ri";
+import { Link } from "react-router-dom";
 export const Container = styled.div`
   width: 100%;
   padding: 1em;
@@ -25,11 +27,12 @@ export const Container = styled.div`
 export const FlexContainer = styled.div`
   display: flex;
   overflow: hidden;
-
   margin-top: ${(props) => props.marginTop};
   justify-content: ${(props) => props.justifyContent};
+  background: ${(props) => props.bgColor};
+  width: ${(props) => props.Width};
+  height: ${(props) => props.Height};
   padding: ${(props) => props.Padding};
-  margin-top: ${(props) => props.marginTop};
   margin-bottom: ${(props) => props.marginBottom};
   align-items: ${(props) => props.alignItems};
   flex-wrap: ${(props) => props.flexWrap};
@@ -55,16 +58,17 @@ export const Card = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: ${(props) => props.bgColor};
   flex-direction: ${(props) => props.flexDirection};
   border-radius: ${(props) => props.borderRadius};
   box-shadow: ${(props) => props.boxShadow};
   width: ${(props) => props.Width};
+  margin: ${(props) => props.Margin};
   height: ${(props) => props.Height};
-  padding: 0.3em;
-  margin: 0.2em 0.5em;
+  padding: ${(props) => props.Padding};
   @media (max-width: 768px) {
     flex-direction: ${(props) => props.responsiveFlexDirection};
-    margin: 0.5em 0;
+    margin: ${(props) => props.responsiveMargin};
     cursor: pointer;
   }
   @media (max-width: 425px) {
@@ -90,6 +94,7 @@ export const Text = styled.p`
   text-transform: ${(props) => props.textTransform};
   text-align: ${(props) => props.textAlign};
   margin: ${(props) => props.Margin};
+  color: ${(props) => props.Color};
 `;
 export const ForwardIcon = styled(MdArrowForwardIos)`
   font-size: 20px;
@@ -136,6 +141,7 @@ export const Button = styled.a`
 
 export const MapIcon = styled(BiMapPin)`
   font-size: 18px;
+  color: ${(props) => props.Color};
 `;
 export const CarIcon = styled(AiFillCar)`
   font-size: 30px;
@@ -146,8 +152,16 @@ export const TripIcon = styled(BiTrip)`
   color: #79b1e5;
 `;
 export const CalendarIcon = styled(BsCalendarDate)`
-  font-size: 30px;
-  color: #79b1e5;
+  font-size: ${(props) => props.fontSize};
+  color: ${(props) => props.Color};
+`;
+export const PersonIcon = styled(BsPerson)`
+  font-size: ${(props) => props.fontSize};
+  color: ${(props) => props.Color};
+`;
+export const SearchIcon = styled(IoIosSearch)`
+  font-size: ${(props) => props.fontSize};
+  color: ${(props) => props.Color};
 `;
 export const HandCoinIcon = styled(RiHandCoinLine)`
   font-size: 30px;
@@ -164,4 +178,42 @@ export const Circle = styled.div`
   border: ${(props) => props.Border};
   padding: 40px;
   margin: 0.3em 0;
+`;
+export const Input = styled.input`
+  border-radius: ${(props) => props.borderRadius};
+  padding: ${(props) => props.Padding};
+  margin: ${(props) => props.Margin};
+  width: ${(props) => props.Width};
+  border: ${(props) => props.Border};
+  background-color: ${(props) => props.bgColor};
+  color: ${(props) => props.Color};
+  font-size: ${(props) => props.fontSize};
+  cursor: ${(props) => props.Cursor};
+  &:hover {
+    background-color: ${(props) => props.hoverBgColor};
+  }
+  &:disabled {
+    background-color: ${(props) => props.disableBgColor};
+    cursor: wait;
+  }
+  &:focus {
+    outline: none;
+    border: ${(props) => props.focusBorder};
+  }
+`;
+export const Label = styled.label`
+  font-size: ${(props) => props.fontSize};
+  margin: ${(props) => props.Margin};
+`;
+export const StyledLink = styled(Link)`
+  font-size: ${(props) => props.fontSize};
+  color: ${(props) => props.Color};
+`;
+
+export const Select = styled.select`
+  padding: ${(props) => props.Padding};
+  margin: ${(props) => props.Margin};
+  border: ${(props) => props.Border};
+  width: ${(props) => props.Width};
+  font-size: 16px;
 `;

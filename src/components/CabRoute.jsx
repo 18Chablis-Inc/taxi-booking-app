@@ -28,6 +28,8 @@ const CabRoute = () => {
       >
         <Card
           Width="300px"
+          Margin="0.2em 0.5em"
+          responsiveMargin="0.5em 0"
           flexDirection="row"
           responsiveFlexDirection="column"
         >
@@ -64,6 +66,8 @@ const CabRoute = () => {
         <Card
           Width="300px"
           flexDirection="row"
+          responsiveMargin="0.5em 0"
+          Margin="0.2em 0.5em"
           responsiveFlexDirection="column"
         >
           <FlexContainer flexDirection="column">
@@ -99,6 +103,8 @@ const CabRoute = () => {
         <Card
           Width="300px"
           flexDirection="row"
+          Margin="0.2em 0.5em"
+          responsiveMargin="0.5em 0"
           responsiveFlexDirection="column"
         >
           <FlexContainer flexDirection="column">
@@ -134,6 +140,8 @@ const CabRoute = () => {
         <Card
           Width="300px"
           flexDirection="row"
+          Margin="0.2em 0.5em"
+          responsiveMargin="0.5em 0"
           responsiveFlexDirection="column"
         >
           <FlexContainer flexDirection="column">

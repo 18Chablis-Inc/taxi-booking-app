@@ -1,14 +1,15 @@
 import Cabs from "./pages/Cabs";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-
+import Routes from "./route";
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Routes />
+      {/* <Router>
         <Switch>
           <Route component={Cabs} path="/" />
         </Switch>
-      </Router>
+      </Router> */}
     </div>
   );
 }

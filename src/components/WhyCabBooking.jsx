@@ -24,7 +24,13 @@ const WhyCabBooking = () => {
         Why EaseMyTrip for cab booking?
       </HeaderText>
       <FlexContainer flexDirection="row" responsiveFlexDirection="column">
-        <Card Width="300px" flexDirection="column" Height="220px">
+        <Card
+          Margin="0.2em 0.5em"
+          responsiveMargin="0.5em 0"
+          Width="300px"
+          flexDirection="column"
+          Height="220px"
+        >
           <Circle Border="1px solid #79b1e5">
             <CarIcon />
           </Circle>
@@ -35,7 +41,13 @@ const WhyCabBooking = () => {
             Wide range of quality, safe and license vehicles
           </Text>
         </Card>
-        <Card Width="300px" flexDirection="column" Height="220px">
+        <Card
+          Margin="0.2em 0.5em"
+          responsiveMargin="0.5em 0"
+          Width="300px"
+          flexDirection="column"
+          Height="220px"
+        >
           <Circle Border="1px solid #79b1e5">
             <HandCoinIcon />
           </Circle>
@@ -46,7 +58,13 @@ const WhyCabBooking = () => {
             Enjoy a high quality transfer experience at surprisingly low prices
           </Text>
         </Card>
-        <Card Width="300px" flexDirection="column" Height="220px">
+        <Card
+          Margin="0.2em 0.5em"
+          responsiveMargin="0.5em 0"
+          Width="300px"
+          flexDirection="column"
+          Height="220px"
+        >
           <Circle Border="1px solid #79b1e5">
             <TripIcon />
           </Circle>
@@ -58,9 +76,15 @@ const WhyCabBooking = () => {
             free of charge up to 24 hours before the transfer
           </Text>
         </Card>
-        <Card Width="300px" flexDirection="column" Height="220px">
+        <Card
+          Margin="0.2em 0.5em"
+          responsiveMargin="0.5em 0"
+          Width="300px"
+          flexDirection="column"
+          Height="220px"
+        >
           <Circle Border="1px solid #79b1e5">
-            <CalendarIcon />
+            <CalendarIcon Color="#79b1e5" fontSize="30px" />
           </Circle>
           <HeaderText marginTop=".4em" textTransform="capitalize">
             24/7 customer service
